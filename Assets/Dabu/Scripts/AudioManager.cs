@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        this.Play("BGM");
     }
 
     // Update is called once per frame
