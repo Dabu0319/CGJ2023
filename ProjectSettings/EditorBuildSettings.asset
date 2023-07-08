@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Xv/Scenes/Start.unity
+    guid: 94aac907afc80d34eb7fb5ba25f224f9
+  - enabled: 1
     path: Assets/Dabu/Scenes/Level01.unity
     guid: 5d7b491fb030b304998a56f19cc4fce5
   - enabled: 1

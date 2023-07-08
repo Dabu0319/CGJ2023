@@ -55,3 +55,8 @@ MonoBehaviour:
     volume: 0.35
     pitch: 1.85
     loop: 0
+  - name: StartClick
+    clip: {fileID: 8300000, guid: 5aff3e28d1cc0a44c998db61b4abd2ef, type: 3}
+    volume: 0.35
+    pitch: 1.85
+    loop: 0
