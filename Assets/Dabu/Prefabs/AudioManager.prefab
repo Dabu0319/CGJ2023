@@ -50,3 +50,13 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+  - name: Jump
+    clip: {fileID: 8300000, guid: 29f7bb20875f7ae4fbb8510fa9ab093a, type: 3}
+    volume: 0.35
+    pitch: 1.85
+    loop: 0
+  - name: StartClick
+    clip: {fileID: 8300000, guid: 5aff3e28d1cc0a44c998db61b4abd2ef, type: 3}
+    volume: 0.35
+    pitch: 1.85
+    loop: 0
