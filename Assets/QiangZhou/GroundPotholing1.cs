@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundPotholing : MonoBehaviour
+public class GroundPotholing1 : MonoBehaviour
 {
     public Transform[] dig;
  
