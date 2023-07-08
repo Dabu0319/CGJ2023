@@ -19,7 +19,7 @@ public class Dragger : MonoBehaviour {
     {
         _rb = GetComponent<Rigidbody2D>();
         //set rigidbody constraints y axis none
-        _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        //_rb.constraints = RigidbodyConstraints2D.FreezePositionY;
     }
 
 
