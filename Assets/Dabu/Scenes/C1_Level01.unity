@@ -234,10 +234,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DigBlock
       objectReference: {fileID: 0}
-    - target: {fileID: 2648101546198075150, guid: 3e8b13d8c212c8741ab0b10e6a197e37, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7176471
-      objectReference: {fileID: 0}
     - target: {fileID: 2648101546198075151, guid: 3e8b13d8c212c8741ab0b10e6a197e37, type: 3}
       propertyPath: m_RootOrder
       value: 8

@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !GameManager_Dabu.instance.isDrag)
         {
             if (_controller2D.m_Grounded == enabled)
             {
