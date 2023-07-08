@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundPotholing1 : MonoBehaviour
+public class GroundPotholingTest : MonoBehaviour
 {
     public Transform[] dig;
  
@@ -147,6 +147,46 @@ public class GroundPotholing1 : MonoBehaviour
                 switch (insidePosNum)
                 {
                     case 0:
+                        if (digPosLeftTop.x< groundPosLeftTop.x&&digPosLeftTop.y>groundPosLeftTop.y)
+                        {
+                            break;
+                        }
+                            else if (groundPosLeftTop.x < digPosLeftTop.x)
+                        {
+                            spawnOneCenter.x = (groundPosLeftTop.x + digPosLeftTop.x) / 2;
+                            spawnOneCenter.y = groundClipPos.y;
+                            spawnOneCenter.z = groundGO.transform.position.z;
+
+                            spawnOneScale.x = digPosLeftTop.x - groundPosLeftTop.x;
+                            spawnOneScale.y = groundClipScale.y;
+                            spawnOneScale.z = groundGO.transform.localScale.z;
+
+                            spawnTwoCenter.x = (groundPosRightTop.x + digPosRightTop.x) / 2;
+                            spawnTwoCenter.y = groundClipPos.y;
+                            spawnTwoCenter.z = groundGO.transform.position.z;
+
+                            spawnTwoScale.x = groundPosRightTop.x - digPosRightTop.x;
+                            spawnTwoScale.y = groundClipScale.y;
+                            spawnTwoScale.z = groundGO.transform.localScale.z;
+                        }
+                        else
+                        {
+                            spawnOneCenter.x = groundClipPos.x;
+                            spawnOneCenter.y = (groundPosLeftTop.y+ digPosLeftTop.y) / 2;
+                            spawnOneCenter.z = groundGO.transform.position.z;
+
+                            spawnOneScale.x = groundClipScale.x;
+                            spawnOneScale.y = groundPosLeftTop.y - digPosLeftTop.y;
+                            spawnOneScale.z = groundGO.transform.localScale.z;
+
+                            spawnTwoCenter.x = groundClipPos.x;
+                            spawnTwoCenter.y = (groundPosLeftDown.y + digPosLeftDown.y) / 2;
+                            spawnTwoCenter.z = groundGO.transform.position.z;
+
+                            spawnTwoScale.x = groundClipScale.x;
+                            spawnTwoScale.y = digPosLeftDown.y - groundPosLeftDown.y;
+                            spawnTwoScale.z = groundGO.transform.localScale.z;
+                        }
                         break;
 
                     case 1:
