@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class GameManager_Dabu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static GameManager_Dabu instance;
+    public bool isDrag;
+    
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         
