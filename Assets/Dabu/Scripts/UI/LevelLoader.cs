@@ -51,6 +51,16 @@ public class LevelLoader : MonoBehaviour
         {
             RestartLevel();
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            LoadPreviousLevel();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            LoadNextLevel();
+        }
     }
 
     public void LoadNextLevel()
