@@ -14,17 +14,17 @@ TagManager:
   - Ground
   - 
   - 
-  - Dig01
+  - Dig1
+  - 
+  - Player
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - block1
+  - block2
+  - block3
+  - overlab12
+  - overlab13
+  - overlab23
   - 
   - 
   - 
