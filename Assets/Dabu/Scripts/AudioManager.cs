@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
