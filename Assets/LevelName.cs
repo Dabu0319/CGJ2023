@@ -15,6 +15,7 @@ public class LevelName : MonoBehaviour
     {
         //get the current level number from sceneManager
         level = SceneManager.GetActiveScene().buildIndex;
+        
         levelNum.text = level.ToString();
     }
 
