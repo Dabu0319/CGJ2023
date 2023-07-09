@@ -18,6 +18,8 @@ public class GroundPotholing : MonoBehaviour
     void Start()
     {
         oriB = Center2Boundary(ground);
+        
+        
     }
     
     void Update()
