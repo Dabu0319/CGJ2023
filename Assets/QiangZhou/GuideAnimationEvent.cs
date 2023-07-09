@@ -5,18 +5,22 @@ using UnityEngine;
 public class GuideAnimationEvent : MonoBehaviour
 {
     GameObject tempGO;
+    public Animator anim;
 
     public void GuideLevel01Start()
     {
-        tempGO = GameObject.Find("DigBlock");
-        tempGO.SetActive(false);
+        AudioManager.instance.Play("Guide01"); 
 
     }
 
     public void GuideLevel01End()
     {
-        tempGO.SetActive(true);
-        tempGO = null;
+        tempGO = GameObject.Find("blink");
+        tempGO.SetActive(false);
         gameObject.SetActive(false);
+        tempGO = null;
     }
+
+    
+
 }
